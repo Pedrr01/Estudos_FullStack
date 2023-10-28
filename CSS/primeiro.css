@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(70, 70, 199);
+}
+
+#titulo {
+  color: white;
+  text-align: center;
+}
+#semana {
+  color: rgba(214, 214, 28, 0.904);
+}
+li {
+  color: white;
+}
+h2 {
+  background-color: rgba(173, 173, 38, 0.904);
+  color: black;
+  border: 2px solid;
+}
+
+.import {
+  color: rgb(170, 30, 30);
+}

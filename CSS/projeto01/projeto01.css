@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Toda tela */
+.container{
+    background-color: #ca3823;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Parte do header */
+.header{
+    background-color: black;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px 15px;
+    padding: 30px;
+}
+.logoheader{
+    width: 200px;
+}
+.bot{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.bot:hover{
+    border-bottom: 2px solid white;
+}
+.gpbot{
+    display: flex;
+    gap: 15px;
+}
+/* Parte do titulo */
+.title{
+    padding-top: 10px;
+    text-align: center;
+    font-family:'Heebo', sans-serif;
+    font-size: 30px;
+}
+.subtitle{
+    text-align: center;
+    font-family:'Heebo', sans-serif;
+    font-size: 20px;
+}
+/* Parta da Section(Grid)*/
+.section{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "main aside";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+/* Parte do Main(Flex) */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: "main";
+    gap: 10px;
+}
+.blocomain{
+    background-color: white;
+    border-radius: 12px;
+    width: 280px;
+    height: 440px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.blocomain:hover{
+    border: 2px solid black;
+}
+.fotomain{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.namemain{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+}
+.descmain{
+    padding: 0 5px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* Parte do aside(Flex) */
+.asidetitle{
+    margin: 15px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+}
+.aside{
+    background-color: #b1bf63;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.asidebloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.asidefoto{
+    margin: 5px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.asidefoto:hover{
+    border: 2px solid black;
+}
+.asidename{
+    padding: 5px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+}
+/* Parte do footer */
+.footer{
+    background-color: black;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px 15px;
+    padding: 30px;
+}
+.logofooter{
+    width: 200px;
+}
+.ancora{
+    color: wheat;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width:625px){
+    .section{
+        padding: 0;
+        grid-template-columns: 4fr;
+        grid-template-areas: 
+        "main"
+        "aside";
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .title{
+        padding-top: 15px;
+        text-align: center;
+        font-family:'Heebo', sans-serif;
+        font-size: 20px;
+    }
+    .subtitle{
+        padding: 10px;
+        text-align: center;
+        font-family:'Heebo', sans-serif;
+        font-size: 15px;
+    }
+    .aside{
+        border-radius: 0;
+    }
+    
+
+}
+/* RESPONSIVIDADE PARA OS BOTS */
+@media screen and (max-width:515px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+

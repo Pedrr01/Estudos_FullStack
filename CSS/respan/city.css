@@ -1,0 +1,21 @@
+*{
+    max-width: ;
+    
+}
+body {
+    background-color: #6e8f85;
+    
+}
+div{
+    text-align: center;
+    background-color: #e4ffd4;
+    border-radius: 10px;
+    min-width: 280px;
+
+}
+
+.imagem{
+    border-radius: 20px;
+}
+
+

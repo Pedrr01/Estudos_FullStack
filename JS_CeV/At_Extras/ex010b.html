@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIGRAÇÃO</title>
+</head>
+<body>
+    <h1>Verifação de nacionalidade</h1>
+    País de Origem: <input type="text" name="nasc" id="nasc">
+    <input type="button" value="VERIFICAR" onclick="veri()">
+    <div id="origem">
+
+    </div>
+    <script>
+        function veri() {
+            var a = document.getElementById('nasc')
+            var b = document.getElementById('origem')
+            var c = a.value
+            b.innerHTML += `<p>Você nasceu no(a) <strong>${c}</strong>.</p>`
+            if (c == 'BRASIL') {
+                b.innerHTML += '<p>VOCÊ É BRASILEIRO(A)</p>'
+            } 
+            else {
+                b.innerHTML += '<p>VOCÊ É ESTRANGEIRO(A)</p>'
+            }
+        }
+    </script>
+
+
+</body>
+</html>

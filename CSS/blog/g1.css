@@ -1,0 +1,36 @@
+#logo {
+  text-align: center;
+}
+body {
+  background-color: #d51407;
+}
+
+h2 {
+  font-family: "Inconsolata", monospace;
+  color: black;
+}
+
+h5 {
+  font-family: "Tilt Warp", sans-serif;
+  color: black;
+}
+span {
+  background-color: #d51407;
+  padding-left: 9px;
+  padding-bottom: 3px;
+  padding-right: 9px;
+  border-radius: 20px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+#publi {
+  background-color: #fffafa;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px black;
+  width: 70%;
+  height: 100%;
+  margin: 0px auto 0px auto;
+  padding: 30px;
+}
